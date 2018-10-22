@@ -53,4 +53,16 @@ function logGuess() {
 // if the letter selected is in the word, then display that letter in correctGuesses. 
 // Else, display in guessedLetters.
 
-//
+// if the guessesLeft = 0 then gameOver = true. 
+if(guessesLeft = 0) {
+    gameOver = true;
+    reset();
+}
+
+// if correctGuesses = currentWord then display wins++. 
+if(correctGuesses = currentWord) {
+    document.getElementById("wins").textContent = wins++;
+}
+else{
+    //continue guessing.
+}
